@@ -1,5 +1,6 @@
 import React from "react";
+import "./itemListContainer.css";
 
-export const ItemListContainer = ({ message }) => {
-	return <div className='itemList--container'>{message}</div>;
+export const ItemListContainer = ({ greeting }) => {
+	return <div className='itemList--container'>{greeting}</div>;
 };

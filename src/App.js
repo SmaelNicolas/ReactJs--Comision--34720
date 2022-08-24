@@ -6,7 +6,7 @@ function App() {
 	return (
 		<div className='app--container'>
 			<NavbarMUI />
-			<ItemListContainer message={"HOLA!"} />
+			<ItemListContainer greeting={"TEXTO RECIBIDO POR PROP 🖐"} />
 		</div>
 	);
 }
