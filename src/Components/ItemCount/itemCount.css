@@ -1,0 +1,42 @@
+.itemCount--container {
+	width: 500px;
+	height: 500px;
+	border: 1px solid black;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 10px;
+}
+
+.itemCount--buttons--container {
+	width: 100%;
+	padding: 20px;
+	margin: 5px 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.itemCount--buttons--button {
+	padding: 10px 35px;
+	background-color: grey;
+	color: white;
+	text-transform: uppercase;
+}
+
+.itemCount--buttons--button:hover {
+	background-color: rgb(71, 68, 68);
+	cursor: pointer;
+}
+
+.itemCount--buttonBuy {
+	width: 250px;
+	height: 50px;
+	cursor: pointer;
+}
+
+.itemCount--buttonBuy:hover {
+	background-color: yellow;
+}
