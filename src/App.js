@@ -9,7 +9,7 @@ function App() {
 	const [initial, setInitial] = useState(1);
 
 	// ESTADO PARA MANEJAR EL STOCK.
-	const [stock, setStock] = useState(10);
+	const [stock, setStock] = useState(5);
 
 	//FUNCION PARA MANEJAR CUANDO SE AGREGAR UNO A LA CANTIDAD INICIAL
 	const onAdd = () => {
