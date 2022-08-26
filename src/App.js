@@ -1,10 +1,13 @@
 import { useState } from "react";
-import "./app.css";
+import "./App.css";
 import { ItemCount } from "./Components/ItemCount/ItemCount";
 import { ItemListContainer } from "./Components/ItemListContainer/ItemListContainer";
 import { NavbarMUI } from "./Components/Navbar/NavbarMUI";
+import { Promises } from "./Components/Promises/Promises";
 
 function App() {
+	//estados para manejar los botones de desafios
+
 	// ESTADO PARA MANEJAR EL VALOR EN EL CUAL COMIENZA LA CANTIDAD Y PUEDE IR AUMENTANDO HASTA EL STOCK o DISMINUIR HASTA 1
 	const [initial, setInitial] = useState(1);
 
@@ -25,7 +28,6 @@ function App() {
 		<div className='app--container'>
 			<NavbarMUI />
 			<ItemListContainer greeting={"TEXTO RECIBIDO POR PROP 🖐"} />
-
 			{/* IMPORTAMOS EL COMPONENTE Y LE PASAMOS LOS ESTADOS Y LAS FUNCIONES */}
 			<ItemCount
 				stock={stock}
@@ -33,6 +35,7 @@ function App() {
 				onAdd={onAdd}
 				onRemove={onRemove}
 			/>
+			<Promises />
 		</div>
 	);
 }

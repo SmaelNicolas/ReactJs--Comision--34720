@@ -1,7 +1,6 @@
 .app--container {
 	width: calc(100vw - (100vw - 100%));
 	min-height: 100vh;
-	background-color: red;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
