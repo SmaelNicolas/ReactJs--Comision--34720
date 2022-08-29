@@ -1,0 +1,22 @@
+.item--card {
+	width: 325px;
+	height: 550px;
+	border: 1px solid black;
+	margin: 10px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.item--card--description {
+	width: 90%;
+	height: 150px;
+	text-align: start;
+	font-size: 12px;
+}
+.item--card--button {
+	padding: 5px 25px;
+	cursor: pointer;
+}

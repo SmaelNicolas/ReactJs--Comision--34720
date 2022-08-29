@@ -3,7 +3,7 @@ import "./App.css";
 import { ItemCount } from "./Components/ItemCount/ItemCount";
 import { ItemListContainer } from "./Components/ItemListContainer/ItemListContainer";
 import { NavbarMUI } from "./Components/Navbar/NavbarMUI";
-import { Promises } from "./Components/Promises/Promises";
+// import { Promises } from "./Components/Promises/Promises";
 
 function App() {
 	//estados para manejar los botones de desafios
@@ -27,7 +27,7 @@ function App() {
 	return (
 		<div className='app--container'>
 			<NavbarMUI />
-			<ItemListContainer greeting={"TEXTO RECIBIDO POR PROP 🖐"} />
+			<ItemListContainer greeting={"CATALOGO 💥"} />
 			{/* IMPORTAMOS EL COMPONENTE Y LE PASAMOS LOS ESTADOS Y LAS FUNCIONES */}
 			<ItemCount
 				stock={stock}
@@ -35,7 +35,7 @@ function App() {
 				onAdd={onAdd}
 				onRemove={onRemove}
 			/>
-			<Promises />
+			{/* <Promises /> */}
 		</div>
 	);
 }

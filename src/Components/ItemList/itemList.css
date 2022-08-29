@@ -1,0 +1,9 @@
+.items--layout {
+	width: 100%;
+	min-height: 800px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
