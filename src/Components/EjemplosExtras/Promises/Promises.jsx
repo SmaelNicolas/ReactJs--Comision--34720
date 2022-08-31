@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 //comentar este catalogo cuando se descomente catalogo = [];
-import { catalogo } from "../../Data/catalogoProductos";
+import { catalogoDeProductos } from "../../../Data/catalogoProductos";
 
 export const Promises = () => {
 	//descomentar esta const catalogo = [] para que la promesa sea rechazada
@@ -11,9 +11,9 @@ export const Promises = () => {
 	const soyUnaPromesa = new Promise((resolve, reject) => {
 		//si el catalogo tiene items, la promesa se acepta y toma el valor catalogo
 		//si el catalogo es vacio , la promesa es rechazada y nos informa que no tiene items
-		catalogo.length > 0
+		catalogoDeProductos.length > 0
 			? setTimeout(() => {
-					resolve(catalogo);
+					resolve(catalogoDeProductos);
 			  }, 3000)
 			: setTimeout(() => {
 					reject("NO HAY PRODUCTOS");

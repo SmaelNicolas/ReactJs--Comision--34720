@@ -1,3 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@font-face {
+	font-family: "SSRegular";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Samsung Sans Regular"),
+		url("./Assets/Fonts/SamsungSans-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: "SSThin";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Samsung Sans Thin"),
+		url("./Assets/Fonts/SamsungSans-Thin.woff") format("woff");
+}
+
+@font-face {
+	font-family: "SSLight";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Samsung Sans Light"),
+		url("./Assets/Fonts/SamsungSans-Light.woff") format("woff");
+}
+
+@font-face {
+	font-family: "SSMedium";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Samsung Sans Medium"),
+		url("./Assets/Fonts/SamsungSans-Medium.woff") format("woff");
+}
+
+@font-face {
+	font-family: "SSBold";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Samsung Sans Bold"),
+		url("./Assets/Fonts/SamsungSans-Bold.woff") format("woff");
+}
+
 * {
 	margin: 0;
 	padding: 0;

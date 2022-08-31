@@ -1,9 +1,12 @@
 import { useState } from "react";
 import "./App.css";
+import FetchContainer from "./Components/EjemplosExtras/Fetchs/CLASE/FetchContainer";
+import { Fetchs } from "./Components/EjemplosExtras/Fetchs/Fetchs";
+import { FetchSinInput } from "./Components/EjemplosExtras/Fetchs/FetchSinInput";
+import { Promises } from "./Components/EjemplosExtras/Promises/Promises";
 import { ItemCount } from "./Components/ItemCount/ItemCount";
 import { ItemListContainer } from "./Components/ItemListContainer/ItemListContainer";
 import { NavbarMUI } from "./Components/Navbar/NavbarMUI";
-// import { Promises } from "./Components/Promises/Promises";
 
 function App() {
 	//estados para manejar los botones de desafios
@@ -26,16 +29,23 @@ function App() {
 
 	return (
 		<div className='app--container'>
-			<NavbarMUI />
-			<ItemListContainer greeting={"CATALOGO 💥"} />
+			{/* <NavbarMUI />
+			<ItemListContainer greeting={"CATALOGO 💥"} /> */}
 			{/* IMPORTAMOS EL COMPONENTE Y LE PASAMOS LOS ESTADOS Y LAS FUNCIONES */}
-			<ItemCount
+			{/* <ItemCount
 				stock={stock}
 				initial={initial}
 				onAdd={onAdd}
 				onRemove={onRemove}
-			/>
+			/> */}
 			{/* <Promises /> */}
+			{/* <FetchContainer /> */}
+
+			{/* EJEMPLO CON INPUT */}
+			<Fetchs />
+
+			{/* EJEMPLO SIN INPUT */}
+			{/* <FetchSinInput /> */}
 		</div>
 	);
 }

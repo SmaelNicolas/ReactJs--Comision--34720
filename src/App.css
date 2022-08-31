@@ -5,4 +5,9 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
+	background: linear-gradient(
+		113deg,
+		rgba(95, 10, 135, 0.958420868347339) 27%,
+		rgba(164, 80, 139, 0.9556197478991597) 93%
+	);
 }

@@ -1,0 +1,74 @@
+.pkm--card--container {
+	width: 500px;
+	height: 750px;
+	border: 2px solid black;
+	border-radius: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	color: #f3ed0d;
+	box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.pkm--card--image {
+	width: 80%;
+}
+
+.pkm--card--top {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 20px;
+	text-transform: capitalize;
+	font-family: "SSMedium";
+}
+
+.pkm--card--titles {
+	width: 50%;
+	text-align: center;
+	text-transform: capitalize;
+	border-bottom: 1px solid #f3ed0d;
+
+	font-family: "SSLight";
+	letter-spacing: 1px;
+	margin: 15px 0px;
+}
+
+.pkm--card--types--container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	text-transform: capitalize;
+	font-family: "SSThin";
+	padding-bottom: 15px;
+}
+
+.pkm--card--abilities--container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	text-transform: capitalize;
+	font-family: "SSThin";
+	padding-bottom: 15px;
+}
+
+.pkm--card--stats--container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	text-transform: capitalize;
+	font-family: "SSThin";
+	padding-bottom: 15px;
+}
