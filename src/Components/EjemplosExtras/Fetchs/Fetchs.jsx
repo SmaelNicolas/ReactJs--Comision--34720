@@ -10,7 +10,7 @@ export const Fetchs = () => {
 	const [error, setError] = useState(false);
 	// SIMULAR EL RETRASO
 	const [loading, setLoading] = useState(true);
-	// SIMULAR EL RETRASO
+	// ESTADO PARA ALMACENAR EL VALOR DEL INPUT
 	const [value, setValue] = useState("");
 	// para mostrar el contenido una vez que comienze la busqueda
 	const [show, setShow] = useState(false);
