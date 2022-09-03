@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Loading } from "../../Loading/Loading";
-import "./fetch.css";
-import { PokemonCard } from "./PokemonCard";
+import { Pokemon } from "../Pokemon/Pokemon";
+import "./pokemonListContainer.css";
 
-export const Fetchs = () => {
+export const PokemonListContainer = () => {
 	// GUARDAR EN UN ESTADO SI EL FETCH SE RESOLVIO
 	const [pokemon, setPokemon] = useState();
 	// GUARDAR EN UN ESTADO SI EL FETCH NO SE RESOLVIO
@@ -72,7 +72,7 @@ export const Fetchs = () => {
 				) : error ? (
 					<div className='fetch--error'>No existe ese pokemon 😔</div>
 				) : (
-					<PokemonCard pkm={pokemon} />
+					<Pokemon pkm={pokemon} />
 				))}
 		</div>
 	);

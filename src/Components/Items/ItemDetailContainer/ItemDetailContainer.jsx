@@ -1,6 +1,8 @@
-import React from "react";
-import { ItemList } from "../ItemList/ItemList";
-import "./itemListContainer.css";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { Loading } from "../../Loading/Loading";
+
+import "./itemDetailContainer.css";
 
 const catalogoDeProductos = [
 	{
@@ -77,11 +79,31 @@ const catalogoDeProductos = [
 	},
 ];
 
-export const ItemListContainer = ({ greeting }) => {
-	return (
-		<div className='itemList--container'>
-			<h2>{greeting}</h2>
-			<ItemList items={catalogoDeProductos} />
+export const ItemDetailContainer = () => {
+	const { idItem } = useParams();
+	const [prod, setProd] = useState();
+	const [loading, setLoading] = useState(true);
+
+	useEffect(() => {
+		setProd(
+			catalogoDeProductos.find((item) => item.id === parseInt(idItem))
+		);
+		setTimeout(() => {
+			setLoading(false);
+		}, 3000);
+	}, [idItem]);
+
+	return loading ? (
+		<Loading />
+	) : (
+		<div className='itemDetail--container'>
+			<div className='itemDetail--card'>
+				<h3>{prod.title}</h3>
+				<img src={prod.pictureUrl} alt={prod.title} />
+				<div>Stock : {prod.stock}</div>
+				<div> Precio : {prod.price}</div>
+				<div>Descripcion : {prod.description}</div>
+			</div>
 		</div>
 	);
 };

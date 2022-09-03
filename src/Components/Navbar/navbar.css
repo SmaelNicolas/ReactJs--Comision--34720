@@ -1,0 +1,46 @@
+.navbar {
+	width: 100%;
+	height: 70px;
+	padding: 0px 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar--logo {
+	height: 50px;
+}
+
+.navbar--ul {
+	width: 500px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+}
+
+.navbar--ul--li {
+	list-style: none;
+	text-align: center;
+	width: 150px;
+}
+
+.navbar--ul--li--link {
+	width: 150px;
+	text-decoration: none;
+	color: white;
+	font-family: "SSBold";
+	letter-spacing: 0.8px;
+	font-size: x-large;
+	transition: all 0.2s;
+}
+
+.navbar--ul--li--link:hover {
+	color: greenyellow;
+	transition: all 0.2s;
+	cursor: pointer;
+	font-size: 22px;
+}

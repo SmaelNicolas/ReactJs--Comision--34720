@@ -1,0 +1,17 @@
+.itemDetail--container {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+
+.itemDetail--card {
+	width: 600px;
+	height: 800px;
+	border: 6px dotted rgb(214, 179, 24);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 25px;
+}

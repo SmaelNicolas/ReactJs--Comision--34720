@@ -1,7 +1,7 @@
 import React from "react";
-import "./pokemonCard.css";
+import "./pokemon.css";
 
-export const PokemonCard = ({ pkm }) => {
+export const Pokemon = ({ pkm }) => {
 	return (
 		<div className='pkm--card--container'>
 			<div className='pkm--card--top'>

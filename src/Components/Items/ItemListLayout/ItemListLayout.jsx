@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { Loading } from "../../Loading/Loading";
 import { Item } from "../Item/Item";
-import { Loading } from "../Loading/Loading";
 import "./itemList.css";
 
-export const ItemList = ({ items }) => {
+export const ItemListLayout = ({ items }) => {
 	const [catalogo, setCatalogo] = useState([]);
 	const [loading, setLoading] = useState(true);
 

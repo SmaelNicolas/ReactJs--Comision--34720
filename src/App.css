@@ -11,3 +11,14 @@
 		rgba(164, 80, 139, 0.9556197478991597) 93%
 	);
 }
+
+.cards--container {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	gap: 20px;
+}

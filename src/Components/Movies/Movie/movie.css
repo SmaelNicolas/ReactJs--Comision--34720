@@ -1,0 +1,28 @@
+.movie--card {
+	width: 400px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 25px;
+	border: 1px solid white;
+	box-shadow: 0px 1px 16px 11px rgba(0, 0, 0, 0.48);
+	-webkit-box-shadow: 0px 1px 16px 11px rgba(0, 0, 0, 0.48);
+	-moz-box-shadow: 0px 1px 16px 11px rgba(0, 0, 0, 0.48);
+	text-decoration: none;
+}
+
+.movie--title {
+	color: orange;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.movie--img {
+	height: 350px;
+}
+
+.movie--button {
+	padding: 5px 30px;
+}
