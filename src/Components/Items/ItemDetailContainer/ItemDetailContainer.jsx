@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Loading } from "../../Loading/Loading";
+import { ItemCount } from "../ItemCount/ItemCount";
 
 import "./itemDetailContainer.css";
 
@@ -100,8 +101,8 @@ export const ItemDetailContainer = () => {
 			<div className='itemDetail--card'>
 				<h3>{prod.title}</h3>
 				<img src={prod.pictureUrl} alt={prod.title} />
-				<div>Stock : {prod.stock}</div>
 				<div> Precio : {prod.price}</div>
+				<ItemCount stock={prod.stock} />
 				<div>Descripcion : {prod.description}</div>
 			</div>
 		</div>

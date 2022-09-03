@@ -1,8 +1,5 @@
 .itemCount--container {
-	width: 500px;
-	height: 500px;
-	border: 1px solid black;
-	background-color: white;
+	width: 300px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -20,8 +17,9 @@
 }
 
 .itemCount--buttons--button {
-	padding: 10px 35px;
-	background-color: grey;
+	margin: 5px;
+	padding: 10px 5px;
+	background-color: transparent;
 	color: white;
 	text-transform: uppercase;
 }
@@ -32,8 +30,8 @@
 }
 
 .itemCount--buttonBuy {
-	width: 250px;
-	height: 50px;
+	width: 150px;
+	height: 25px;
 	cursor: pointer;
 }
 
