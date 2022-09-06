@@ -1,0 +1,33 @@
+.inputVocal--container {
+	width: 100%;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.inputVocal--title {
+	color: yellow;
+	text-transform: capitalize;
+	font-family: "SSRegular";
+	letter-spacing: 1px;
+}
+
+.inputVocal--input {
+	padding: 10px;
+	border: 1px solid whitesmoke;
+	background-color: transparent;
+	color: white;
+}
+
+.inputVocal--output {
+	width: 100%;
+	text-align: center;
+	color: yellow;
+	text-transform: uppercase;
+	font-family: "SSThin";
+	font-size: 50px;
+}

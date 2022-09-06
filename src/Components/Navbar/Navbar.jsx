@@ -25,6 +25,11 @@ export const Navbar = () => {
 						POKEMON
 					</Link>
 				</li>
+				<li className='navbar--ul--li'>
+					<Link to='/input-vocal' className='navbar--ul--li--link'>
+						Ej Vocal
+					</Link>
+				</li>
 			</ul>
 		</nav>
 	);
