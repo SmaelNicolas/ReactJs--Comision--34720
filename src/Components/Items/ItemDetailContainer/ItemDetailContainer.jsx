@@ -85,6 +85,10 @@ export const ItemDetailContainer = () => {
 	const [prod, setProd] = useState();
 	const [loading, setLoading] = useState(true);
 
+	const onAdd = (value) => {
+		alert(`Compraste ${value} productos`);
+	};
+
 	useEffect(() => {
 		setProd(
 			catalogoDeProductos.find((item) => item.id === parseInt(idItem))
@@ -102,7 +106,7 @@ export const ItemDetailContainer = () => {
 				<h3>{prod.title}</h3>
 				<img src={prod.pictureUrl} alt={prod.title} />
 				<div> Precio : {prod.price}</div>
-				<ItemCount stock={prod.stock} />
+				<ItemCount onAdd={onAdd} stock={prod.stock} />
 				<div>Descripcion : {prod.description}</div>
 			</div>
 		</div>

@@ -4,6 +4,10 @@ import { ItemCount } from "../ItemCount/ItemCount";
 import "./item.css";
 
 export const Item = ({ producto }) => {
+	const onAdd = (value) => {
+		alert(`Compraste ${value} productos`);
+	};
+
 	return (
 		<div className='item--card'>
 			<h3>{producto.title}</h3>
@@ -12,7 +16,7 @@ export const Item = ({ producto }) => {
 			<div className='item--card--description'>
 				{producto.description}
 			</div>
-			<ItemCount stock={producto.stock} initial={1} />
+			<ItemCount onAdd={onAdd} stock={producto.stock} />
 
 			<Link to={`/items/${producto.id}`} className='item--card--button'>
 				Ver 🔎
