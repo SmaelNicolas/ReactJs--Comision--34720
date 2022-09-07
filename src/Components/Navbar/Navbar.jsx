@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../Assets/Imgs/lgrt.png";
+import { CartWidget } from "../CartWidget/CartWidget";
 import "./navbar.css";
 
 export const Navbar = () => {
@@ -28,6 +29,11 @@ export const Navbar = () => {
 				<li className='navbar--ul--li'>
 					<Link to='/input-vocal' className='navbar--ul--li--link'>
 						Ej Vocal
+					</Link>
+				</li>
+				<li className='navbar--ul--li'>
+					<Link to='/cart' className='navbar--ul--li--link'>
+						<CartWidget />
 					</Link>
 				</li>
 			</ul>

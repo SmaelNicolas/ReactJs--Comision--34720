@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Loading } from "../Loading/Loading";
 import "./inputVocal.css";
 
 const vocals = ["a", "e", "i", "o", "u"];
@@ -7,6 +8,7 @@ export const InputVocal = () => {
 	const [keyPressed, setKeyPressed] = useState();
 	const [keyCode, setKeyCode] = useState();
 	const [time, setTime] = useState();
+	const [loading, setLoading] = useState(true);
 
 	const handleInput = (e) => {
 		console.log(e);
@@ -17,7 +19,15 @@ export const InputVocal = () => {
 		search !== undefined && e.preventDefault();
 	};
 
-	return (
+	useEffect(() => {
+		setTimeout(() => {
+			setLoading(false);
+		}, 2000);
+	}, []);
+
+	return loading ? (
+		<Loading />
+	) : (
 		<div className='inputVocal--container'>
 			<h2 className='inputVocal--title'>Input sin Vocales</h2>
 			<input

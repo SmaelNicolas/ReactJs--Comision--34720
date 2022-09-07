@@ -1,6 +1,7 @@
 // import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import { Cart } from "./Components/Cart/Cart";
 import { InputVocal } from "./Components/InputVocal/InputVocal";
 import { ItemDetailContainer } from "./Components/Items/ItemDetailContainer/ItemDetailContainer";
 import { ItemListContainer } from "./Components/Items/ItemListContainer/ItemListContainer";
@@ -30,6 +31,7 @@ function App() {
 					path='/movies-week/:idMovie'
 				/>
 				<Route element={<InputVocal />} path='/input-vocal' />
+				<Route element={<Cart />} path='/cart' />
 				<Route element={<Error />} path='/*' />
 			</Routes>
 		</div>
