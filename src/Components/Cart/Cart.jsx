@@ -1,9 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { CartContext } from "../../Context/CartContext";
 import { Loading } from "../Loading/Loading";
 import "./cart.css";
 
 export const Cart = () => {
 	const [loading, setLoading] = useState(true);
+
+	const { quantityItems } = useContext(CartContext);
+
+	const itemsInCart = quantityItems();
 
 	useEffect(() => {
 		setTimeout(() => {
@@ -15,7 +20,7 @@ export const Cart = () => {
 		<Loading />
 	) : (
 		<div className='cart--container'>
-			<div>Cart</div>
+			<div>Total : {itemsInCart}</div>
 		</div>
 	);
 };

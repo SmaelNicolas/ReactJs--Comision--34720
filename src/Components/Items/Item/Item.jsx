@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { CartContext } from "../../../Context/CartContext";
 import { ItemCount } from "../ItemCount/ItemCount";
 import "./item.css";
 
 export const Item = ({ producto }) => {
-	const onAdd = (value) => {
-		alert(`Compraste ${value} productos`);
+	const { addToCart } = useContext(CartContext);
+
+	const onAdd = () => {
+		addToCart(producto);
 	};
 
 	return (
@@ -16,7 +19,7 @@ export const Item = ({ producto }) => {
 			<div className='item--card--description'>
 				{producto.description}
 			</div>
-			<ItemCount onAdd={onAdd} stock={producto.stock} />
+			<ItemCount product={producto} />
 
 			<Link to={`/items/${producto.id}`} className='item--card--button'>
 				Ver 🔎
