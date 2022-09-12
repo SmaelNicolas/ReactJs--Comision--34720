@@ -9,6 +9,6 @@ export const AddToCartAlert = (title, quantity) => {
 		},
 		timer: 1700,
 		toast: true,
-		position: "top-right",
+		position: "bottom-left",
 	});
 };
