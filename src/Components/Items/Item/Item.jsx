@@ -22,7 +22,7 @@ export const Item = ({ producto }) => {
 			<ItemCount product={producto} />
 
 			<Link to={`/items/${producto.id}`} className='item--card--button'>
-				Ver 🔎
+				Ver Detalles 🔎
 			</Link>
 		</div>
 	);

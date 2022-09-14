@@ -33,8 +33,37 @@
 	width: 150px;
 	height: 25px;
 	cursor: pointer;
+	margin-top: 20px;
 }
 
 .itemCount--buttonBuy:hover {
 	background-color: yellow;
+}
+
+.itemCount--groupButtons {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.itemCount--link {
+	width: 129px;
+	height: 25px;
+	color: white;
+	padding: 3px 10px;
+	border: 1px solid black;
+	background-color: grey;
+	cursor: pointer;
+	margin: 2px;
+	text-decoration: none;
+	font-family: "SSThin";
+	font-size: small;
+}
+
+.itemCount--link:hover {
+	background-color: orange;
 }
