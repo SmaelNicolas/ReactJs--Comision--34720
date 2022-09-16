@@ -1,10 +1,14 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import { AddToCartAlert } from "../SweetAlerts/AddToCart";
 
 export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
 	const [cart, setCart] = useState([]);
+
+	useEffect(() => {
+		console.log(cart);
+	}, [cart]);
 
 	const addToCart = (item, quantity) => {
 		if (isInCart(item.id)) {
@@ -16,6 +20,17 @@ export const CartProvider = ({ children }) => {
 			setCart([...cart, item]);
 		}
 		AddToCartAlert(item.title, quantity);
+
+		// **************** opcion 2 , sin usar isInCart *****************************
+		// const itemInCart = cart.find((it) => it.id === item.id);
+		// if (itemInCart) {
+		// 	itemInCart.quantity = itemInCart.quantity + quantity;
+		// 	setCart([...cart]);
+		// } else {
+		// 	item.quantity = quantity;
+		// 	setCart([...cart, item]);
+		// }
+		// AddToCartAlert(item.title, quantity);
 	};
 
 	const quantityItems = () => {
