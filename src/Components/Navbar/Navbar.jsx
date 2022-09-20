@@ -18,7 +18,12 @@ export const Navbar = () => {
 			<ul className='navbar--ul'>
 				<li className='navbar--ul--li'>
 					<Link to='/items' className='navbar--ul--li--link'>
-						Items
+						ITEMS
+					</Link>
+				</li>
+				<li className='navbar--ul--li'>
+					<Link to='/firebase' className='navbar--ul--li--link'>
+						FIREBASE
 					</Link>
 				</li>
 				<li className='navbar--ul--li'>
@@ -34,11 +39,6 @@ export const Navbar = () => {
 				<li className='navbar--ul--li'>
 					<Link to='/input-vocal' className='navbar--ul--li--link'>
 						Ej Vocal
-					</Link>
-				</li>
-				<li className='navbar--ul--li'>
-					<Link to='/firebase' className='navbar--ul--li--link'>
-						Firebase
 					</Link>
 				</li>
 				<li className='navbar--ul--li'>
