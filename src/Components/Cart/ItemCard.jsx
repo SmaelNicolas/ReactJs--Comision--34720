@@ -13,7 +13,6 @@ export const ItemCard = ({ item }) => {
 				className='itemCart--card--img'
 				src={item.pictureUrl}
 				alt={item.title}
-				srcset=''
 			/>
 			<div className='itemCart--card--text'>
 				Cantidad : {item.quantity}

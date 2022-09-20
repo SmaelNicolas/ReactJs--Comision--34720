@@ -60,7 +60,7 @@ export const MoviesListContainer = () => {
 				) : (
 					<div className='cards--container'>
 						{arrayMovies.map((movie) => (
-							<Movie movie={movie} />
+							<Movie key={movie.id} movie={movie} />
 						))}
 					</div>
 				))}

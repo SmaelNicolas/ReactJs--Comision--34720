@@ -33,7 +33,7 @@ export const Cart = () => {
 				VACIAR CARRITO
 			</button>
 			{cart.map((item) => (
-				<ItemCard item={item} />
+				<ItemCard key={item.id} item={item} />
 			))}
 		</div>
 	);
