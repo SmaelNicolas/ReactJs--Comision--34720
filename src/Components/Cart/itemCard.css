@@ -1,0 +1,33 @@
+.itemCart--card {
+	width: 650px;
+	height: 350px;
+	border: 3px solid black;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+}
+
+.itemCart--card--title {
+	width: 100%;
+	text-align: center;
+}
+
+.itemCart--card--img {
+	object-fit: contain;
+}
+
+.itemCart--card--text {
+	width: 150px;
+}
+
+.itemCart--card--trash {
+	width: 25px;
+	height: 25px;
+}
+.itemCart--card--trash:hover {
+	cursor: pointer;
+	color: black;
+}
