@@ -1,3 +1,3 @@
 # Ejemplos de los desafios
 
-## Agregado hasta desafio CART CONTEXT
+## Agregado hasta desafio FIREBASE (ITEM DETAIL I)
