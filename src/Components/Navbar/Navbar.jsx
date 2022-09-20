@@ -37,6 +37,11 @@ export const Navbar = () => {
 					</Link>
 				</li>
 				<li className='navbar--ul--li'>
+					<Link to='/firebase' className='navbar--ul--li--link'>
+						Firebase
+					</Link>
+				</li>
+				<li className='navbar--ul--li'>
 					<Link to='/cart' className='navbar--ul--li--link'>
 						<CartWidget /> {itemsInCart}
 					</Link>

@@ -9,6 +9,7 @@ export const MovieDetailContainer = () => {
 	const [error, setError] = useState(false);
 	const [loading, setLoading] = useState(true);
 	const [show, setShow] = useState(false);
+
 	useEffect(() => {
 		setShow(true);
 		setLoading(true);
@@ -57,8 +58,7 @@ export const MovieDetailContainer = () => {
 							WEB :{" "}
 							<a
 								className='movie--info--data--a'
-								href={movie.homepage}
-							>
+								href={movie.homepage}>
 								{movie.homepage}
 							</a>
 						</div>
