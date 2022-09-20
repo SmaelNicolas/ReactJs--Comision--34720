@@ -2,6 +2,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Cart } from "./Components/Cart/Cart";
+import { Checkout } from "./Components/Checkout/Checkout";
 import { FirebaseItemDetailContainer } from "./Components/FirebaseItems/FirebaseItemDetail/FirebaseItemDetailContainer";
 import { FirebaseItems } from "./Components/FirebaseItems/FirebaseItemList/FirebaseItemsList";
 import { InputVocal } from "./Components/InputVocal/InputVocal";
@@ -39,6 +40,7 @@ function App() {
 					element={<FirebaseItemDetailContainer />}
 					path='/firebase/item/:idItemFirebase'
 				/>
+				<Route element={<Checkout />} path='/checkout' />
 				<Route element={<Error />} path='/*' />
 			</Routes>
 		</div>

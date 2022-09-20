@@ -37,6 +37,13 @@ export const CartProvider = ({ children }) => {
 		return cart.reduce((totalQ, prod) => totalQ + prod.quantity, 0);
 	};
 
+	const totalCart = () => {
+		return cart.reduce(
+			(totalP, prod) => totalP + prod.quantity * prod.price,
+			0
+		);
+	};
+
 	const isInCart = (id) => {
 		return cart.some((prod) => prod.id === id);
 	};
@@ -53,6 +60,7 @@ export const CartProvider = ({ children }) => {
 		<CartContext.Provider
 			value={{
 				cart,
+				totalCart,
 				quantityItems,
 				addToCart,
 				clearCart,

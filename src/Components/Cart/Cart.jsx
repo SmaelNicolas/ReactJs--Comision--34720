@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../Context/CartContext";
+import { CartEmpty } from "../CartEmpty/CartEmpty";
 import { Loading } from "../Loading/Loading";
 import "./cart.css";
 import { ItemCard } from "./ItemCard";
@@ -21,17 +22,15 @@ export const Cart = () => {
 	return loading ? (
 		<Loading />
 	) : itemsInCart === 0 ? (
-		<div className='cart--empty'>
-			<div className='cart--empty--text'>CARRITO VACIO</div>
-			<Link className='cart--empty--link' to='/items'>
-				Ir a Comprar
-			</Link>
-		</div>
+		<CartEmpty />
 	) : (
 		<div className='cart--container'>
 			<button className='cart--emptyButton' onClick={() => clearCart()}>
 				VACIAR CARRITO
 			</button>
+			<Link to='/checkout' className='cart--checkout'>
+				FINALIZAR COMPRA! 🔥
+			</Link>
 			{cart.map((item) => (
 				<ItemCard key={item.id} item={item} />
 			))}
