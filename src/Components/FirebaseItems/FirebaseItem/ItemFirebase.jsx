@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ItemCount } from "../ItemCount/ItemCount";
-import "./item.css";
+// import { ItemCount } from "../ItemCount/ItemCount";
+import "./itemFirebase.css";
 
-export const Item = ({ producto }) => {
+export const ItemFirebase = ({ producto }) => {
 	const reduceString = (str) => {
 		return str.length > 100 ? str.slice(0, 97).concat("...") : str;
 	};
@@ -20,9 +20,11 @@ export const Item = ({ producto }) => {
 			<div className='item--card--description'>
 				{reduceString(producto.description)}
 			</div>
-			<ItemCount product={producto} />
+			{/* <ItemCount product={producto} /> */}
 
-			<Link to={`/items/${producto.id}`} className='item--card--button'>
+			<Link
+				to={`/firebase/item/${producto.id}`}
+				className='item--card--button'>
 				Ver Detalles 🔎
 			</Link>
 		</div>

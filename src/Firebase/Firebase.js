@@ -13,6 +13,5 @@ const firebaseConfig = {
 export const getDataBase = () => {
 	initializeApp(firebaseConfig);
 	const db = getFirestore();
-
 	return db;
 };

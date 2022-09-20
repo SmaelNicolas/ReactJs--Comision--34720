@@ -16,7 +16,8 @@
 }
 
 .itemCart--card--img {
-	object-fit: contain;
+	width: 40%;
+	max-height: 270px;
 }
 
 .itemCart--card--text {

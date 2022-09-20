@@ -2,7 +2,8 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Cart } from "./Components/Cart/Cart";
-import { FirebaseItems } from "./Components/FirebaseItems/FirebaseItems";
+import { FirebaseItemDetailContainer } from "./Components/FirebaseItems/FirebaseItemDetail/FirebaseItemDetailContainer";
+import { FirebaseItems } from "./Components/FirebaseItems/FirebaseItemList/FirebaseItemsList";
 import { InputVocal } from "./Components/InputVocal/InputVocal";
 import { ItemDetailContainer } from "./Components/Items/ItemDetailContainer/ItemDetailContainer";
 import { ItemListContainer } from "./Components/Items/ItemListContainer/ItemListContainer";
@@ -34,6 +35,10 @@ function App() {
 				<Route element={<InputVocal />} path='/input-vocal' />
 				<Route element={<Cart />} path='/cart' />
 				<Route element={<FirebaseItems />} path='/firebase' />
+				<Route
+					element={<FirebaseItemDetailContainer />}
+					path='/firebase/item/:idItemFirebase'
+				/>
 				<Route element={<Error />} path='/*' />
 			</Routes>
 		</div>
