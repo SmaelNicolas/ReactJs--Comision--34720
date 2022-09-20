@@ -27,7 +27,12 @@ export const Checkout = () => {
 				phone,
 				email,
 			},
-			items: cart,
+			// items: cart,
+			items: cart.map((item) => ({
+				id: item.id,
+				price: item.price,
+				title: item.title,
+			})),
 			total: totalCart(),
 			date: new Date().toISOString().replace("T", " | "),
 		};
