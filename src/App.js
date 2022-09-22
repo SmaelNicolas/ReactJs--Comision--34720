@@ -36,6 +36,7 @@ function App() {
 				<Route element={<InputVocal />} path='/input-vocal' />
 				<Route element={<Cart />} path='/cart' />
 				<Route element={<FirebaseItems />} path='/firebase' />
+				<Route element={<FirebaseItems />} path='/firebase/:category' />
 				<Route
 					element={<FirebaseItemDetailContainer />}
 					path='/firebase/item/:idItemFirebase'

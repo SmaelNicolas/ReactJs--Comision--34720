@@ -7,3 +7,26 @@
 	justify-content: center;
 	align-items: center;
 }
+
+.firebase--group--links {
+	width: 100%;
+	padding: 20px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	color: white;
+	gap: 40px;
+}
+
+.firebase--links {
+	color: gold;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.3s;
+}
+
+.firebase--links:hover {
+	color: rgb(0, 195, 255);
+	transition: all 0.3s;
+}
